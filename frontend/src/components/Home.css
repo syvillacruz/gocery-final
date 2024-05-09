@@ -1,0 +1,13 @@
+.home-container {
+    background-image: linear-gradient(to bottom, #00b106 0%, white 100%);
+    background-color: white; /* Fallback color for browsers that don't support gradients */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Ensure the div takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

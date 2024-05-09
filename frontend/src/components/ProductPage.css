@@ -1,0 +1,134 @@
+.product-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the start */
+    align-items: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+    width: 100%; /* Ensure the header spans the full width */
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: #7FFF00; /* Background color to cover the content below */
+    z-index: 1000; /* High z-index to ensure it's above other content */
+    border-bottom: 2px solid lightgreen; /* Light green line at the top */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px; /* Adjust the gap between images as needed */
+    width: 100%; /* Ensure the grid spans the full width */
+    margin-top: 200px; /* Adjust based on the height of your header */
+}
+
+.product-box {
+    border: 1px solid transparent;
+    padding: 10px;
+    transition: border 0.3s ease;
+    box-sizing: border-box; /* Ensure padding is included in the box size */
+    width: 200px; /* Adjust the width of each product box */
+    position: relative; /* Positioning context for the Add to Cart button */
+}
+
+.product-box:hover {
+    border: 1px solid #000; /* Adjust border color as needed */
+}
+
+.product-image {
+    width: 100%; /* Make the image take the full width of the product box */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+}
+
+.add-to-cart {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1; /* Ensure the button is above the image */
+    background-color: gray; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default button border */
+    padding: 5px 10px; /* Adjust button padding for smaller size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 178px;
+}
+
+.add-to-cart:hover{
+    background-color: green;
+}
+
+.back-button, .cart-button {
+    position: fixed;
+    top: 10px;
+    color: white; /* Button text color */
+    border: none; 
+    background: none;
+    padding: 5px 10px; /* Adjust button padding for smaller size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.back-button {
+    left: 10px; /* Position the back button on the upper left corner */
+}
+
+.cart-button {
+    right: 10px; /* Position the cart button on the upper right corner */
+}
+
+.product-image-small {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+}
+
+.product-name {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  right: 10px;
+  text-align: center;
+  color: #fff; /* Adjust text color as needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 5px; /* Adjust padding as needed */
+  border-radius: 5px; 
+}
+
+.page-header {
+    display: flex;
+    justify-content: center; /* Center-align the elements */
+    align-items: center;
+    padding: 25px;
+    width: 100%; /* Ensure the header spans the full width */
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: #7FFF00; /* Background color to cover the content below */
+    z-index: 1000; /* High z-index to ensure it's above other content */
+    border-bottom: 2px solid lightgreen; /* Light green line at the top */
+}
+
+.search-input {
+    flex: 1; /* Take up remaining space */
+    margin: 0 auto; /* Center the search input horizontally */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px; /* Adjust the gap between images as needed */
+    width: 100%; /* Ensure the grid spans the full width */
+    margin-top: 150px; /* Adjust based on the height of your header */
+}
